@@ -1,0 +1,13 @@
+This project is a feed-forward neural network implementation in Java. It supports topologies such as multilayer perceptron, generalized feed-forward nets and modular feed-forward nets. The multilayer perceptrons can be very quickly created using a multilayer perceptron constructor.
+
+The various classes included are Neuron, Synapse, NeuralNet, Pattern, Patternset, Randomizer and LineReader. 
+ 
+
+
+The Config class creates a configuration file for the neural network with NNC extension, and IPconvert class creates the file having data set with input and output values. Patternset class randomly divides the dataset into a training set (80%), cross-validation data set (10%), and test data set (10%). 
+
+Configuration file and files containing data are read by class NeuralNet in association with class LineReader. Class NeuralNet is an aggregation or contains objects of class Neuron and Synapse. Every object of NeuralNet is associated with N or more objects of class Neuron and Synapse. The Layer is child class of NeuralNet as its objects inherit the attributes of its parent class. The LineReader and Randomizer are two abstract classes for which no objects are created. 
+
+
+
+LineReader class facilitates reading process and Randomizer generates the random number. Once the net is created and trained the weight file of trained net created by NeuralNet is loaded and net is recreated by PredictActivity class which then predicts the activity of novel bacteriocins.
